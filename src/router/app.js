@@ -3,8 +3,6 @@ import Kind from '@/components/Kind';
 import User from '@/components/User';
 import Cart from '@/components/Cart';
 import Msg from '@/components/Msg';
-import ProductGroup from '@/components/ProductGroup/UI';
-import Detail from '@/components/Detail'
 
 const routes = [
   {
@@ -26,14 +24,6 @@ const routes = [
   {
     path: '/msg',
     component: Msg
-  },
-  {
-    path: '/productGroup/:id',
-    component: ProductGroup
-  },
-  {
-    path: '/detail/:id',
-    component: Detail
   }
 ];
 

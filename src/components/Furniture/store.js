@@ -1,16 +1,16 @@
 // 定义初始状态管理器
 const data = (state = { // 初始状态值
-  bannerlist: [],
+  furniturebannerlist: [],
   prolist: [],
-  // 超妹
-  // 超妹
+  furniturelist: []
+
 },action) => {
   const { type, data} = action
   switch (type) {
-    case 'CHANGE_BANNERLIST':
-    return {...state, bannerlist: data }
-    case 'CHANGE_PROLIST':
-    return {...state, prolist: data }
+    case 'CHANGE_FURNITUREBANNER':
+    return {...state, furniturebannerlist: data }
+    case 'CHANGE_FURNITURELIST':
+    return {...state, furniturelist: data }
     default:
     return state
   }

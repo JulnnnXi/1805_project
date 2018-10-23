@@ -30,7 +30,7 @@ componentDidMount () {
             </div>
           ))}
         </Carousel>
-
+          
         </div>
         }
         </div>

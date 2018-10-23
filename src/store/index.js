@@ -1,13 +1,13 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import homedata from '@/components/Home/store'
-import thunk from 'redux-thunk'
+import furniture from '@/components/Furniture/store'
 import recommended from '@/components/Recommended/store'
-import House from '@/components/House/store'
+import thunk from 'redux-thunk'
 
 const reducer = combineReducers({
   homedata, // 首页的内容
-  recommended,
-  House
+  furniture,
+  recommended
 });
 
 const store = createStore(reducer, applyMiddleware(thunk)); // 有且只有一个，不用更改
