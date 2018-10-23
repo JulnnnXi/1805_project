@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import App from '@/components/App';
-import Pages from '@/components/Pages';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import * as serviceWorker from './serviceWorker';
 import store from '@/store'
+import Detail from '@/components/Detail'
+import ProductGroup from '@/components/ProductGroup'
 import './main.scss';
 
 render() // 一进来默认执行一次
@@ -19,8 +20,9 @@ function render () {
       <Provider store = { store }>
       <Router>
         <Switch>
-        <Route path='/Pages/:id' component = { Pages } />
           <Route path='/' component = { App } />
+          <Route path='/detail/:id' component = { Detail }/>
+          <Route path='/productGroup/:id' component = { ProductGroup }/>
         </Switch>
       </Router>
       </Provider>

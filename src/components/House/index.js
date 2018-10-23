@@ -6,7 +6,8 @@ import action from './action'
 const Com = connect(
   (state) => {
     return {
-      furniturebannerlist: state.furniture.furniturebannerlist
+      prolist: state.homedata.prolist,
+      houselist: state.House.houselist
     }
 
   },
@@ -14,7 +15,7 @@ const Com = connect(
     return {
       getdata () {
         store.dispatch(action.getprolist)
-        store.dispatch(action.getbannerlist) 
+        store.dispatch(action.getbannerlist)
       }
 
     }
